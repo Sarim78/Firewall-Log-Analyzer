@@ -96,11 +96,11 @@ Log format and geolocation settings live in `backend/config.py`:
 
 ## How it works
 
-1. **Parsing** — `parser.py` reads each log line and extracts timestamp, source IP, destination port, protocol, and action (allow/deny).
-2. **Geolocation** — `geolocate.py` looks up each unique source IP and caches the result to avoid re-querying on every run.
-3. **Aggregation** — `aggregator.py` counts occurrences and produces the summary stats the dashboard consumes.
-4. **Serving** — `main.py` exposes parsed and aggregated data through a handful of REST endpoints.
-5. **Display** — the Next.js frontend fetches from those endpoints and renders tables, charts, and a geo map.
+1. **Parsing**: `parser.py` reads each log line and extracts timestamp, source IP, destination port, protocol, and action (allow/deny).
+2. **Geolocation**: `geolocate.py` looks up each unique source IP and caches the result to avoid re-querying on every run.
+3. **Aggregation**: `aggregator.py` counts occurrences and produces the summary stats the dashboard consumes.
+4. **Serving**: `main.py` exposes parsed and aggregated data through a handful of REST endpoints.
+5. **Display**: the Next.js frontend fetches from those endpoints and renders tables, charts, and a geo map.
 
 ## API endpoints
 
