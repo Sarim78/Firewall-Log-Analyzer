@@ -13,7 +13,7 @@ export default function GeoMap({ data }: { data: GeoInfo[] }) {
           {located.map((info) => (
             <li key={info.ip} className="bg-neutral-800 rounded px-3 py-2">
               <span className="font-mono">{info.ip}</span>
-              <span className="text-neutral-400"> — {info.city}, {info.country}</span>
+              <span className="text-neutral-400">, {info.city}, {info.country}</span>
             </li>
           ))}
         </ul>
