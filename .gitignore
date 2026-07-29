@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/venv/
+backend/__pycache__/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# Logs (your real firewall logs shouldn't be committed)
+backend/logs/*.log
+!backend/logs/sample.log
+
+# Next.js build output
+frontend/.next/
+frontend/out/
+
+# Python
+*.pyc
+*.pyo
+backend/*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Misc
+*.log
+.cache/
